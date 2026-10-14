@@ -10,7 +10,6 @@ A Windows desktop app for managing GTA V scripts and plugins.
 ```powershell
 #For Future update WIP
 - add scripts log Tab
-- favori scripts Tab
 - finish LSPDFR search scan support (api)
 - add Nexus search scan support
 - add hotkey section to manual modification
