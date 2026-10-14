@@ -58,13 +58,14 @@ Common dependency libraries (e.g. Newtonsoft.Json, NAudio, EasyHook, System.*, M
 
 -- ##Installation
 
+
+Python 3.11 or newer is recommended. From the project folder:
 ```powershell
-- Python 3.11 or newer is recommended. From the project folder:
-- PowerShellpy -3.11 -m venv .venv
-- .\.venv\Scripts\Activate.ps1
-- python -m pip install --upgrade pip
-- pip install -r requirements.txt
-- python main.py
+PowerShellpy -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python main.py
 ```
 -- ##Usage
 
