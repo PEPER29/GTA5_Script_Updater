@@ -11,7 +11,8 @@ A Windows desktop app for managing GTA V scripts and plugins.
 #For Future update WIP
 - add scripts log Tab
 - favori scripts Tab
-- add support Nexus search scan
+- finish LSPDFR search scan support (api)
+- add Nexus search scan support
 - add hotkey section to manual modification
 Any requests for additions/modifications will be considered; the plan for the upcoming update is not yet complete.
 ```
