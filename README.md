@@ -5,7 +5,8 @@
 
 A Windows desktop app for managing GTA V scripts and plugins.
 
-<img width="1273" height="987" alt="image" src="https://github.com/user-attachments/assets/bdf29e9e-afda-4d87-848d-81d4cef5abfe" />
+<img width="1270" height="979" alt="image" src="https://github.com/user-attachments/assets/a632ce4c-b8f3-4828-9ec8-f7c90ff545d0" />
+
 
 ```powershell
 #For Future update WIP
