@@ -1,0 +1,18 @@
+Modification entry Tips : 
+
+# ini path
+name_of_your_ini.ini
+or
+Folder\name_of_your_ini.ini
+
+# version
+always check local version when you instal new script (auto check is not very accurate)
+
+# url
+-github :https://github.com/user/script/releases
+-gta5-mods.com : simply script URL 
+-LSPDFR : Not available (need API + API_key for acces to the Data)
+-Nexus mod : more informations to next update
+
+# activate key
+soon with next update ....
