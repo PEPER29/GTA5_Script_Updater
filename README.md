@@ -7,6 +7,13 @@ A Windows desktop app for managing GTA V scripts and plugins.
 
 <img width="1273" height="987" alt="image" src="https://github.com/user-attachments/assets/bdf29e9e-afda-4d87-848d-81d4cef5abfe" />
 
+```powershell
+#Changelog: v1.1.0 (manual modification patch)
+- Added a context menu [right-click] to edit the entry (URL, INI path, local version, script name)
+- Update checks will prioritize the provided URL
+- Option to switch between English and French (available since v1.0.0 but not previously listed)
+```
+
 ----------------------------------------------------------------------------------------
 -                                                                                      -
 --------------------------------------------EN------------------------------------------
