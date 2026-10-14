@@ -1,4 +1,8 @@
 # GTA5_Script_Updater
+
+<img width="1672" height="941" alt="GTA5_scripts_manager" src="https://github.com/user-attachments/assets/5c1a808a-7643-4939-b51c-d082e28725a1" />
+
+
 A Windows desktop app for managing GTA V scripts and plugins.
 
 <img width="1273" height="987" alt="image" src="https://github.com/user-attachments/assets/bdf29e9e-afda-4d87-848d-81d4cef5abfe" />
