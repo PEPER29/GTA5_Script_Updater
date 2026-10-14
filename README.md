@@ -15,7 +15,7 @@ A Windows desktop app for managing GTA V scripts and plugins.
 
 GTA5 Script Updater is a PySide6 desktop application designed to inventory GTA V scripts and plugins, manage their local status, and manually check for updates.
 
-##Features
+-- ##Features
 
 Scans .asi files in the root folder, recognized GTA V dependencies (including ScriptHookV.dll, dinput8.dll, and RagePluginHook.exe), scripts in the scripts/ folder, and plugins in the Plugins/ folder.
 
@@ -49,25 +49,33 @@ GTA5-Mods pages are queried at a low frequency and without any anti-bot bypass. 
 
 Common dependency libraries (e.g. Newtonsoft.Json, NAudio, EasyHook, System.*, Microsoft.*) are not checked. The tool never downloads or installs any files.
 
-##Installation
+-- ##Installation
 
-Python 3.11 or newer is recommended. From the project folder:
-PowerShellpy -3.11 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
+- Python 3.11 or newer is recommended. From the project folder:
+- PowerShellpy -3.11 -m venv .venv
+- .\.venv\Scripts\Activate.ps1
+- python -m pip install --upgrade pip
+- pip install -r requirements.txt
+- python main.py
 
-##Usage
+-- ##Usage
 
-Select the folder containing GTA5.exe, then click Scan.
-Filter the list by type, status, favorites, or ignored items; the search also filters by name.
-Use the actions on each row to open the INI, open the folder, enable/disable, or mark as favorite.
-Right-click a row to ignore or restore it.
-Click Check for updates to compare online versions. The progress bar immediately shows the current script and its counter (e.g. “Checking 12/89 – HeapAdjuster.asi…”); the row status changes to “In progress…”. The button becomes Cancel check during processing, and partial results remain visible.
-The With update filter shows only versions detected as newer. The Page button on each row opens the corresponding page after a successful search.
-In Preferences, change the theme, enable debug mode, or adjust the cache duration for results (1 to 168 hours).
-Open the Logs / Debug tab to view diagnostics or open the log file. The file can also be opened directly from this tab.
+1- Select the folder containing GTA5.exe, then click Scan.
+
+2- Filter the list by type, status, favorites, or ignored items; the search also filters by name.
+
+3- Use the actions on each row to open the INI, open the folder, enable/disable, or mark as favorite.
+
+4- Right-click a row to ignore or restore it.
+
+5- Click Check for updates to compare online versions. The progress bar immediately shows the current script and its counter (e.g. “Checking 12/89 – HeapAdjuster.asi…”); the row status changes to “In progress…”. 
+The button becomes Cancel check during processing, and partial results remain visible.
+
+6- The With update filter shows only versions detected as newer. The Page button on each row opens the corresponding page after a successful search.
+
+7- In Preferences, change the theme, enable debug mode, or adjust the cache duration for results (1 to 168 hours).
+
+8- Open the Logs / Debug tab to view diagnostics or open the log file. The file can also be opened directly from this tab.
 
 Settings are saved in %LOCALAPPDATA%\GTA5ScriptUpdater\settings.json.
 
@@ -79,11 +87,11 @@ and logs in %LOCALAPPDATA%\GTA5ScriptUpdater\logs\updater.log
 
 **Important technical notes**
 
-This version can search on LCPDFR (if you provide the API key).
-May freeze slightly during the update check.
-Normalized matching (extensions, versions, and common suffixes removed), manual aliases for known mods; scores below 75 % are shown as “possible match” rather than a confirmed update.
-Scripts not found during update checks are usually caused by a filename that differs from the actual mod name or is poorly formatted.
-Missing INI files are the result of a different name than the script.
+- This version can search on LCPDFR (if you provide the API key).
+- May freeze slightly during the update check.
+- Normalized matching (extensions, versions, and common suffixes removed), manual aliases for known mods; scores below 75 % are shown as “possible match” rather than a confirmed update.
+- Scripts not found during update checks are usually caused by a filename that differs from the actual mod name or is poorly formatted.
+- Missing INI files are the result of a different name than the script.
 
 ----------------------------------------------------------------------------------------
 -                                                                                      -
