@@ -1,6 +1,6 @@
 #For Future Update (WIP)
 
-#-V1.1.5 (Currently undergoing integration)
+#-V1.1.5 ( Done ! )
 -------------------------------------------------------------------------------------------------
 - Implement LSPDFR search/scan support (via API).
 Add an option in the preferences to input an API key.
@@ -27,7 +27,7 @@ It must execute an HTTP request formatted as follows:
 
 - add a logo (gta5_script_updater\logo.png) to the interface (replacing "GTA Script updater" Title ) and the current version number, e.g., V:1.2.0
 
-#-V1.2.0 (architecture planning / methodology and integration - not done)
+#-V1.2.0 (ongoing)
 ------------------------------------------------------------------------
 
 - Add a "Script Logs" tab
