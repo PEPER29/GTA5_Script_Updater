@@ -37,7 +37,9 @@ Implement a feature for the software to scan `.log` files and highlight them bas
 - Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
 - Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
 - Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
-
+- in 2 steps / functions:
+1. scan the log files
+2. scan the content of the log files
 Exclude logs that do not originate from scripts (scan only the game root directory, excluding subfolders—with the exception of the "scripts" and "plugins" folders).
 
 
