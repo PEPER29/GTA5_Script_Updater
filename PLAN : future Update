@@ -1,15 +1,7 @@
 #For Future Update (WIP)
 
-- Add a "Script Logs" tab
-Add a tab to list script logs (scanned and identified by the application).
-
-Implement a feature for the software to scan `.log` files and highlight them based on their content:
-- Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
-- Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
-- Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
-
-Exclude logs that do not originate from scripts (scan only the game root directory, excluding subfolders—with the exception of the "scripts" and "plugins" folders).
-
+V1.1.5
+------------------------------------------------
 - Implement LSPDFR search/scan support (via API).
 Add an option in the preferences to input an API key.
 (Users must request an API key through their LSPDFR account: https://www.lcpdfr.com/settings/?area=appplatform_api_keys_tab)
@@ -35,6 +27,30 @@ It must execute an HTTP request formatted as follows:
 
 - add a logo (gta5_script_updater\logo.png) to the interface (replacing "GTA Script updater" Title ) and the current version number, e.g., V:1.2.0
 
---------------------------------------
-PLAN WORK IN PROGRESS NOT FINISHED YET
---------------------------------------
+V1.2.0
+------------------------------------------------
+
+- Add a "Script Logs" tab
+Add a tab to list script logs (scanned and identified by the application).
+
+Implement a feature for the software to scan `.log` files and highlight them based on their content:
+- Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
+- Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
+- Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
+
+Exclude logs that do not originate from scripts (scan only the game root directory, excluding subfolders—with the exception of the "scripts" and "plugins" folders).
+
+
+-------------------------------------------------------------------------------------------------------------
+To be added in version 1.5.0 or later (ideas to be fleshed out: research/implementation/technical solutions):
+-------------------------------------------------------------------------------------------------------------
+
+- Access to modify `settings.xml` via a button (located at: `C:\Users\Username\Documents\Rockstar Games\GTA V\settings.xml`).
+- Ideally, a quick and easy way to edit the XML: a window displaying the file where only the values ​​can be modified.
+
+- Ability to save/load configuration preferences (e.g., which scripts are enabled or disabled).
+
+- A search function for scripts from sites like LSPDFR, GTA5-mods.com, or Nexus Mods via a search bar (displaying the links found, which lead to the script's respective presentation page).
+----------------------------------------
+*PLAN WORK IN PROGRESS NOT FINISHED YET*
+----------------------------------------
