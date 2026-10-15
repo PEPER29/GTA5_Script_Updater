@@ -1,4 +1,4 @@
-Modification entry Tips : 
+Modification entry Tips : (how to)
 
 # ini path 
 name_of_your_ini.ini
@@ -8,12 +8,11 @@ Folder\name_of_your_ini.ini
 # version
 always check local version when you instal new script (auto check is not very accurate)
 
-# url
+# url 
 -github :https://github.com/user/script/releases
 -gta5-mods.com : simply script URL 
--LSPDFR : Not available (need API_key for acces to the Data => update_checker.py => class LCPDFRProvider:) 
- In the "preferences" section, in the next update—so please be patient.
--Nexus mod : in the next update—so please be patient.
+-LSPDFR :simply script url (you need api-key in the preferences) Update v.1.1.5
+-Nexus mod : script url or ID (you need api-key in the preferences) Update v.1.1.5
 
-# activate key (for you know where each script use key)
-soon with next update ....
+# activate key (for you know where each script use key) Update v.1.1.5
+d'ont forget to separate each key with "|" (Alt Gr + 6)
