@@ -16,6 +16,7 @@ A Windows desktop app for managing GTA V scripts and plugins.
 - add hotkey section to manual modification
 Any requests for additions/modifications will be considered; the plan for the upcoming update is not yet complete.
 ```
+<a href="https://github.com/PEPER29/GTA5_Script_Updater/blob/main/PLAN%20%3A%20future%20Update">For more details (future-Update)</a>
 
 ```powershell
 #Changelog: v1.1.0 (manual modification patch)
