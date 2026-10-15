@@ -1,6 +1,6 @@
-#For Future Update (WIP)
+# Update (WIP)
 
-#-V1.1.5 ( Done ! )
+#-V.1.1.5 ( Done ! )
 -------------------------------------------------------------------------------------------------
 - Implement LSPDFR search/scan support (via API).
 Add an option in the preferences to input an API key.
@@ -27,7 +27,7 @@ It must execute an HTTP request formatted as follows:
 
 - add a logo (gta5_script_updater\logo.png) to the interface (replacing "GTA Script updater" Title ) and the current version number, e.g., V:1.2.0
 
-#-V1.2.0 (ongoing)
+#-V.1.2.0 (ongoing)
 ------------------------------------------------------------------------
 
 - Add a "Script Logs" tab
@@ -42,18 +42,18 @@ in 2 steps / functions:
   2. scan the content of the log files (button)
 Exclude logs that do not originate from scripts (scan only the game root directory, excluding subfolders—with the exception of the "scripts" and "plugins" folders).
 
-
--------------------------------------------------------------------------------------------------------------
-To be added in version 1.2++ or later (ideas to be fleshed out: research/implementation/technical solutions):
--------------------------------------------------------------------------------------------------------------
-
 - Added a profile selector (presets)
 Save and load enabled/disabled scripts
 Uses the progress bar for profile loading (while the application disables/enables scripts)
 
 - A "share profile" feature that automatically list the enabled scripts and exports them in a .txt format
 (useful for sharing a working script profile, or simply for debugging in the event of a crash—for instance, when seeking help on forums, etc.)
+file saved in root folder : curent_profile.txt
 Format: [original script name file] [Display name] [local version] [script Url]
+
+-------------------------------------------------------------------------------------------------------------
+To be added in version 1.2++ or later (ideas to be fleshed out: research/implementation/technical solutions):
+-------------------------------------------------------------------------------------------------------------
 
 - Access to modify `settings.xml` via a button (located at: `C:\Users\Username\Documents\Rockstar Games\GTA V\settings.xml`).
 Ideally, a quick and easy way to edit the XML: a window displaying the file where only the values ​​can be modified.
