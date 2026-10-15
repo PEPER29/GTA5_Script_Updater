@@ -33,6 +33,8 @@ It must execute an HTTP request formatted as follows:
 - Add a hotkey section for manual modification.
 (Provide the option to modify hotkeys in the event that the application is not detected correctly.)
 
+- add a logo (gta5_script_updater\logo.png) to the interface (replacing "GTA Script updater" Title ) and the current version number, e.g., V:1.2.0
+
 --------------------------------------
 PLAN WORK IN PROGRESS NOT FINISHED YET
 --------------------------------------
