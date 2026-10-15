@@ -11,7 +11,25 @@ A Windows desktop app for managing GTA V scripts and plugins.
 <a href="https://github.com/PEPER29/GTA5_Script_Updater/blob/main/PLAN%20%3A%20future%20Update">For more details (future-Update)</a>
 
 ```powershell
-#Changelog: v1.1.0 (manual modification patch)
+#Changelog: v.1.1.5 (Better app Update)
+- LSPDFR support (API)
+  Implement proper search/update checking via the official LSPDFR API.
+  Add a field in Preferences to enter an LSPDFR API key.
+  bIf no API key is provided, keep the provider disabled and show a clear message.
+- Nexus Mods support (API)
+  Implement search/update checking for Nexus Mods.
+  Add a field in Preferences to enter a Nexus Mods personal API key.
+  If no API key is provided, keep the provider disabled and show a clear message
+- Manual hotkey editing (Manual-Edit MOD)
+  In the existing “Edit information…” dialog (right-click on a row).
+  add a dedicated section to manually set/edit the activation hotkeys.
+  This allows the user to correct or add hotkeys when automatic detection fails.
+  Save the manual hotkeys persistently with the other overrides. 
+- Logo + Version in the interface (UI)
+  Replace the current text title “GTA Script Updater” with the application logo 
+  display the current version number in the format: V:1.2.0
+
+#Changelog: v.1.1.0 (manual modification patch)
 - Added a context menu [right-click] to edit the entry (URL, INI path, local version, script name)
 - Update checks will prioritize the provided URL
 - Option to switch between English and French (available since v1.0.0 but not previously listed)
