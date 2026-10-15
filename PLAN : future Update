@@ -1,27 +1,37 @@
 #For Future Update (WIP)
 
 - Add a "Script Logs" tab
-Add a tab to list script logs (scanned and indexed by the application).
+Add a tab to list script logs (scanned and identified by the application).
 
-Configure the software to scan `.log` files and highlight them based on their content:
-- Red: logs containing terms such as "error," "Fatal error," "Crash," etc.
-- Orange: logs containing terms such as "Warning," "Deprecated," "Out of memory," etc.
-- Green: logs containing no errors. 
-Note: Color priority is red > orange.
+Implement a feature for the software to scan `.log` files and highlight them based on their content:
+- Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
+- Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
+- Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
 
-Restrict scanning to script-related logs (scan only the game root directory, excluding subfolders, with the exception of the "scripts" and "plugins" folders).
+Exclude logs that do not originate from scripts (scan only the game root directory, excluding subfolders—with the exception of the "scripts" and "plugins" folders).
 
-- Implement LSPDFR search/scan support (via API)
+- Implement LSPDFR search/scan support (via API).
 Add an option in the preferences to input an API key.
-(Users must request an API key via their LSPDFR account: https://www.lcpdfr.com/settings/?area=appplatform_api_keys_tab)
+(Users must request an API key through their LSPDFR account: https://www.lcpdfr.com/settings/?area=appplatform_api_keys_tab)
 
-- Implement Nexus search/scan support
+A unique User-Agent must be declared.
+Example: User-Agent: GTA5_Script_Updater/1.2.0 (contact@myemail.com)
+
+- Implement Nexus search/scan support.
 Requires a personal API key.
 Add an option in the preferences to input an API key.
-(Users must request an API key via their Nexus account: https://www.nexusmods.com/settings/api-keys)
+(Users must request an API key through their Nexus account: https://www.nexusmods.com/settings/api-keys)
 
-- Add a "Hotkeys" section for manual configuration
-(Allow users to modify hotkeys in cases where the application fails to detect them correctly.)
+It must execute an HTTP request formatted as follows:
+• Endpoint (Example for GTA V): GET https://nexusmods.com
+• HTTP Headers:
+• apikey: [user_api_key]
+• Application-Name: GTA5_Script_Updater
+• Application-Version: 1.2.0
+• (Optional but recommended) Example: User-Agent: GTA5_Script_Updater/1.2.0 (for standard web compliance)
+
+- Add a hotkey section for manual modification.
+(Provide the option to modify hotkeys in the event that the application is not detected correctly.)
 
 --------------------------------------
 PLAN WORK IN PROGRESS NOT FINISHED YET
