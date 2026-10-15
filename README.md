@@ -8,14 +8,6 @@ A Windows desktop app for managing GTA V scripts and plugins.
 <img width="1270" height="979" alt="image" src="https://github.com/user-attachments/assets/a632ce4c-b8f3-4828-9ec8-f7c90ff545d0" />
 
 
-```powershell
-#For Future update WIP
-- add scripts log Tab
-- finish LSPDFR search scan support (api)
-- add Nexus search scan support
-- add hotkey section to manual modification
-Any requests for additions/modifications will be considered; the plan for the upcoming update is not yet complete.
-```
 <a href="https://github.com/PEPER29/GTA5_Script_Updater/blob/main/PLAN%20%3A%20future%20Update">For more details (future-Update)</a>
 
 ```powershell
