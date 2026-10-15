@@ -33,13 +33,13 @@ It must execute an HTTP request formatted as follows:
 - Add a "Script Logs" tab
 Add a tab to list script logs (scanned and identified by the application).
 
-Implement a feature for the software to scan `.log` files and highlight them based on their content:
-- Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
-- Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
-- Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
-- in 2 steps / functions:
-1. scan the log files
-2. scan the content of the log files
+-Implement a feature for the software to scan `.log` files and highlight them based on their content:
+Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
+Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
+Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
+in 2 steps / functions:
+  1. scan the log files (one button or when application scan through your list of scripts)
+  2. scan the content of the log files (button)
 Exclude logs that do not originate from scripts (scan only the game root directory, excluding subfolders—with the exception of the "scripts" and "plugins" folders).
 
 
@@ -47,14 +47,16 @@ Exclude logs that do not originate from scripts (scan only the game root directo
 To be added in version 1.2++ or later (ideas to be fleshed out: research/implementation/technical solutions):
 -------------------------------------------------------------------------------------------------------------
 
-- A "share profile" feature that automatically lists the enabled scripts and exports them in a .txt format
+- Added a profile selector (presets)
+Save and load enabled/disabled scripts
+Uses the progress bar for profile loading (while the application disables/enables scripts)
+
+- A "share profile" feature that automatically list the enabled scripts and exports them in a .txt format
 (useful for sharing a working script profile, or simply for debugging in the event of a crash—for instance, when seeking help on forums, etc.)
+Format: [original script name file] [Display name] [local version] [script Url]
 
 - Access to modify `settings.xml` via a button (located at: `C:\Users\Username\Documents\Rockstar Games\GTA V\settings.xml`).
-
-- Ideally, a quick and easy way to edit the XML: a window displaying the file where only the values ​​can be modified.
-
-- Ability to save/load configuration preferences (e.g., which scripts are enabled or disabled).
+Ideally, a quick and easy way to edit the XML: a window displaying the file where only the values ​​can be modified.
 
 - A search function for scripts from sites like LSPDFR, GTA5-mods.com, or Nexus Mods via a search bar (displaying the links found, which lead to the script's respective presentation page).
 ----------------------------------------
