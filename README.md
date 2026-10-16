@@ -5,12 +5,39 @@
 
 A Windows desktop app for managing GTA V scripts and plugins.
 
-<img width="1270" height="979" alt="image" src="https://github.com/user-attachments/assets/a632ce4c-b8f3-4828-9ec8-f7c90ff545d0" />
+<img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/a632ce4c-b8f3-4828-9ec8-f7c90ff545d0" /><img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/17416d02-42d3-44c0-88eb-f77fc7c2123e" /><img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/0b2b29d5-6a32-4edc-a99f-689b17449941" />
+
 
 
 <a href="https://github.com/PEPER29/GTA5_Script_Updater/blob/main/PLAN%20%3A%20future%20Update">For more details (future-Update)</a>
 
+<div style="font-family: 'Segoe UI', Arial, sans-serif; border: 1px solid #e4e4e7; border-radius: 8px; padding: 20px; max-width: 500px; margin: 20px auto; background-color: #fafafa; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+  
+  <!-- Titre fixe de l'encadré -->
+  <h2 style="font-size: 18px; color: #18181b; margin: 0 0 15px 0; font-weight: 700; text-align: center; border-bottom: 1px solid #e4e4e7; padding-bottom: 10px;">
+    📜 Update history
+  </h2>
+
 ```powershell
+
+#Changelog: v.1.2.0 (Fonction scripts log and profile Update) *+optimisations
+- Add a "Script Logs" tab
+- Implement a feature for the software to scan `.log` files and highlight them based on their content:
+   Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
+   Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
+   Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
+  in 2 steps / functions:
+   1. scan the log files (one button or when application scan through your list of scripts)
+   2. scan the content of the log files (button)
+(scan only the game root directory, excluding subfolders—with the exception of the "scripts" and "plugins" folders).
+- Added a profile selector (presets)
+  Save and load enabled/disabled scripts
+- A "share profile" feature that automatically list the enabled scripts and exports them in a .txt format
+(useful for sharing a working script profile, or simply for debugging in the event of a crash—for instance, when seeking help on forums, etc.)
+  file saved in root GTA5 folder : curent_profile.txt
+- Thread reduction: the internet scan features a sequential mode to prevent spam.*
+- Experimental feature "gta5-mods" API_KEY option (non-useable but in the future...)
+
 #Changelog: v.1.1.5 (Better app Update)
 - LSPDFR support (API)
   Implement proper search/update checking via the official LSPDFR API.
@@ -35,50 +62,38 @@ A Windows desktop app for managing GTA V scripts and plugins.
 - Option to switch between English and French (available since v1.0.0 but not previously listed)
 ```
 
-----------------------------------------------------------------------------------------
--                                                                                      -
---------------------------------------------EN------------------------------------------
--                                                                                      -
-----------------------------------------------------------------------------------------
+<div style="font-family: 'Georgia', serif; border-left: 4px solid #0076ff; padding-left: 15px; margin-bottom: 25px;">
+  <h2 style="font-size: 22px; color: #1a1a1a; margin: 0; font-weight: normal; font-style: italic;">
+    #-------------------EN-------------------
+  </h2>
+</div>
+
 
 GTA5 Script Updater is a PySide6 desktop application designed to inventory GTA V scripts and plugins, manage their local status, and manually check for updates.
 
--- ##Features
+<div style="font-family: 'Georgia', serif; border-left: 4px solid #0076ff; padding-left: 15px; margin-bottom: 25px;">
+  <h2 style="font-size: 22px; color: #1a1a1a; margin: 0; font-weight: normal; font-style: italic;">
+    ##-Features
+  </h2>
+</div>
 
-Scans .asi files in the root folder, recognized GTA V dependencies (including ScriptHookV.dll, dinput8.dll, and RagePluginHook.exe), scripts in the scripts/ folder, and plugins in the Plugins/ folder.
-
-Recognizes .disabled files, .dll, .cs, and .vb extensions in supported locations, and detects matching .ini files with the same base name.
-
-Extracts version information from Windows PE resources, then from an associated INI file, then from a number present in the filename.
-
-Opens the associated INI or the containing folder, enables/disables scripts by renaming, and supports favorites and an ignored items list.
-
-Detects common activation keys in associated INI files and displays them in the Keys column. Standalone modifiers are excluded, combined modifiers are stripped from the value, and an empty/unassigned value is kept visibly empty.
-
-Resizable table columns.
-
-Dark and light themes, filters, search, persistent preferences, and debug mode.
-
-Logs / Debug tab available inside the application, plus a detailed log file stored in the user’s configuration folder.
-
-Version checking against GTA5-Mods.com,
-[LCPDFR via its official API (optional LCPDFR_API_KEY)]
-for RPH plugins, and GitHub Releases for ScriptHookVDotNet and Enhanced Native Trainer.
-
-Multi-term GTA5-Mods search with manual aliases for popular mods, explicit confidence threshold, and a “possible match” status for results that need manual verification.
-
-Semantic version comparison, configurable JSON cache (12 hours by default), HTTP timeout capped at 12 seconds and a 15-second budget per script, 3-second delay only after a successful request, clear HTTP error logging, and cancellation from the progress button.
-
-Direct access to the online page when a match is found; dedicated filter for available updates.
-
-LCPDFR web scraping is disabled. Without an LCPDFR_API_KEY, this provider makes no requests.
-
-GTA5-Mods pages are queried at a low frequency and without any anti-bot bypass. If a site refuses access or does not respond, the result is reported as an error rather than “up to date”.
-
-Common dependency libraries (e.g. Newtonsoft.Json, NAudio, EasyHook, System.*, Microsoft.*) are not checked. The tool never downloads or installs any files.
-
--- ##Installation
-
+- Full scan of scripts (.asi, .NET, RPH, etc.)
+- Direct access to configuration .ini files
+- Quick enable/disable for scripts
+- Detection and display of activation keys
+- Update checks (GTA5-Mods, Nexus, LSPDFR, GitHub)
+- Manual editing of information (version, link, hotkeys, INI)
+- Profile system (save/load configurations)
+- Profile export (current_profile.txt) for sharing or debugging
+- Script Logs tab with error analysis and color-coding
+- Multi-language support (French / English)
+- Dark and light themes
+  
+<div style="font-family: 'Georgia', serif; border-left: 4px solid #0076ff; padding-left: 15px; margin-bottom: 25px;">
+  <h2 style="font-size: 22px; color: #1a1a1a; margin: 0; font-weight: normal; font-style: italic;">
+    ##-Instalation
+  </h2>
+</div>
 
 Python 3.11 or newer is recommended. From the project folder:
 ```powershell
@@ -88,118 +103,62 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 python main.py
 ```
--- ##Usage
 
-1- Select the folder containing GTA5.exe, then click Scan.
+<div style="font-family: 'Georgia', serif; border-left: 4px solid #0076ff; padding-left: 15px; margin-bottom: 25px;">
+  <h2 style="font-size: 22px; color: #1a1a1a; margin: 0; font-weight: normal; font-style: italic;">
+    ##-Usage and details
+  </h2>
+</div>
 
-2- Filter the list by type, status, favorites, or ignored items; the search also filters by name.
+#- The application is available in French and English (this option can be found in the preferences).
+Support for other languages ​​may be added if there is sufficient demand.
 
-3- Use the actions on each row to open the INI, open the folder, enable/disable, or mark as favorite.
+#- Please prioritize manual entry! (You may run an "update" scan, but only when first setting things up.)
+This is especially important for [URLs]; it prevents the application from having to search for them automatically, which consumes a large number of requests.
+(Doing so risks getting you blocked by the website due to request-per-minute limits.)
+Furthermore, the application might not always find the correct URL (it could even select the wrong one, particularly when multiple scripts share the same name).
+Providing complete information for each entry is highly recommended for optimal performance and ease of use.
 
-4- Right-click a row to ignore or restore it.
+#- The application searches via:
+- https://www.gta5-mods.com/
+- https://www.nexusmods.com/ ( /!\ API key required /!\)
+- https://www.lcpdfr.com/ ( /!\ API key required /!\)
+- https://github.com/
 
-5- Click Check for updates to compare online versions. The progress bar immediately shows the current script and its counter (e.g. “Checking 12/89 – HeapAdjuster.asi…”); the row status changes to “In progress…”. 
-The button becomes Cancel check during processing, and partial results remain visible.
+#- Don't forget to enter your API keys for LCPDFR and Nexus Mods (available upon request via your personal account; see the preferences menu).
+Without these, the scan will be limited and may fail to detect updates for your scripts.
 
-6- The With update filter shows only versions detected as newer. The Page button on each row opens the corresponding page after a successful search.
+#- The application will never download scripts for you! You can do this by clicking on "page" (to access the site's webpage).
 
-7- In Preferences, change the theme, enable debug mode, or adjust the cache duration for results (1 to 168 hours).
+This software was not created to replace official sites like gta5-mods.com, Nexus, or LSPDFR.
 
-8- Open the Logs / Debug tab to view diagnostics or open the log file. The file can also be opened directly from this tab.
+It simply allows you to quickly check whether any of your scripts have available updates.
+Given that most of us have at least 50 scripts, checking them one by one becomes tedious and time-consuming.
+(This assumes you have already saved the URLs; otherwise, it’s even slower, and you risk ending up on the wrong page, as there are sometimes multiple scripts with the same name...)
 
-Settings are saved in %LOCALAPPDATA%\GTA5ScriptUpdater\settings.json.
+#-The GTA5-mods API key is an experimental feature (it is currently impossible to obtain one).
+This was included in case GTA5-mods decides to enable a public or private API in the future.
+For now, please leave this field blank.
 
-The cache is stored in %LOCALAPPDATA%\GTA5ScriptUpdater\update_cache.json
+#-The "share profile" function will create a text file (current_profile.txt) in your GTA5 root directory.
+Line format: [original script filename] [display name] [local version] [script URL]
 
-and logs in %LOCALAPPDATA%\GTA5ScriptUpdater\logs\updater.log
+#-I recommend setting the update cache to 72 hours or longer (since scripts don't change versions every single day).
 
-(with a fallback location in the user folder on other platforms).
+- Settings are saved in %LOCALAPPDATA%\GTA5ScriptUpdater\settings.json.
+- The cache is located in %LOCALAPPDATA%\GTA5ScriptUpdater\update_cache.json,
+- and logs can be found in %LOCALAPPDATA%\GTA5ScriptUpdater\logs\updater.log
+  
+(with a fallback location in the user directory on other platforms).
 
-**Important technical notes**
+<div style="font-family: 'Georgia', serif; border-left: 4px solid #0076ff; padding-left: 15px; margin-bottom: 25px;">
+  <h2 style="font-size: 22px; color: #1a1a1a; margin: 0; font-weight: normal; font-style: italic;">
+    ##-Important technical notes
+  </h2>
+</div>
 
-- This version can search on LCPDFR (if you provide the API key).
 - May freeze slightly during the update check.
 - Normalized matching (extensions, versions, and common suffixes removed), manual aliases for known mods; scores below 75 % are shown as “possible match” rather than a confirmed update.
 - Scripts not found during update checks are usually caused by a filename that differs from the actual mod name or is poorly formatted.
 - Missing INI files are the result of a different name than the script.
 
-----------------------------------------------------------------------------------------
--                                                                                      -
---------------------------------------------FR------------------------------------------
--                                                                                      -
-----------------------------------------------------------------------------------------
-
-**GTA5 Script Updater** est une application de bureau PySide6 pour inventorier les scripts et plugins GTA V, gérer leur état local et vérifier manuellement les mises à jour...
-
-
-## Fonctionnalités
-
-- Scan des fichiers `.asi` de la racine, des dépendances GTA V reconnues (dont `ScriptHookV.dll`, `dinput8.dll` et `RagePluginHook.exe`), des scripts de `scripts/` et des plugins de `Plugins/`.
-
-- Reconnaissance des fichiers `.disabled`, des extensions `.dll`, `.cs` et `.vb` dans les emplacements pris en charge, et détection des fichiers INI homonymes.
-
-- Extraction de version depuis les ressources PE Windows, puis depuis un INI, puis depuis un numéro présent dans le nom du fichier.
-
-- Ouverture de l’INI associé ou du dossier, activation/désactivation par renommage, favoris et liste des éléments ignorés.
-
-- Détection des touches d’activation courantes dans les INI associés, affichées dans la colonne **Touches**; les modificateurs seuls sont exclus, les modificateurs combinés sont retirés de la valeur, et une valeur non renseignée reste visiblement vide.
-
-- Colonnes du tableau redimensionnables 
-
-- Thèmes sombre et clair, filtres, recherche, préférences persistantes et mode debug.
-
-- Onglet **Journaux / Debug** accessible dans l’application et fichier de log détaillé conservé dans le dossier de configuration utilisateur.
-
-- Vérification des versions publiée sur GTA5-Mods.com, 
-[ LCPDFR via son API officielle "manquant" (clé optionnelle `LCPDFR_API_KEY`) ] 
-pour les plugins RPH et GitHub Releases pour ScriptHookVDotNet et Enhanced Native Trainer.
-
-- Recherche GTA5-Mods multi-termes avec alias manuels pour les mods populaires, seuil de confiance explicite et statut « correspondance possible » pour les résultats à vérifier.
-
-- Comparaison sémantique des versions, cache JSON configurable (12 h par défaut), timeout
-HTTP plafonné à 12 secondes et budget de 15 secondes par script, délai de 3 secondes uniquement après une requête réussie, journalisation claire des erreurs HTTP et annulation depuis le bouton de progression.
-
-- Accès direct à la page en ligne lorsqu’une correspondance a été trouvée; filtre dédié aux mises à jour disponibles.
-
-Le scraping web de LCPDFR est désactivé; sans clé `LCPDFR_API_KEY`, ce provider n’effectue aucune requête. 
-Les pages GTA5-Mods sont consultées à faible fréquence et sans contournement des protections anti-bot. Si un site refuse l’accès ou ne répond pas, le résultat est signalé comme erreur plutôt que comme « à jour ». 
-Les bibliothèques de dépendances communes (par ex. `Newtonsoft.Json`, `NAudio`, `EasyHook`, `System.*`, `Microsoft.*`) ne sont pas vérifiées; La vérification ne télécharge ni n’installe de fichiers.
-
-## Installation
-
-Python 3.11 ou plus récent est recommandé. Depuis le dossier du projet :
-
-```powershell
-py -3.11 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
-```
-
-## Utilisation
-
-1. Choisissez le dossier contenant `GTA5.exe`, puis lancez **Scanner**.
-2. Filtrez la liste par type, état, favoris ou éléments ignorés; la recherche filtre aussi par nom.
-3. Utilisez les actions de chaque ligne pour ouvrir l’INI, ouvrir le dossier, activer/désactiver ou marquer un favori.
-4. Faites un clic droit sur une ligne pour l’ignorer ou la rétablir.
-5. Cliquez sur **Vérifier les mises à jour** pour comparer les versions en ligne. La progression affiche immédiatement le script en cours et son compteur (par ex. « Vérification 12/89 – HeapAdjuster.asi… »); le statut de sa ligne passe à « En cours… ». Le bouton devient **Annuler la vérification** pendant le traitement, et les résultats partiels restent visibles.
-6. Le filtre **Avec mise à jour** ne montre que les versions détectées comme plus récentes. Le bouton **Page** de chaque ligne ouvre la page correspondante après une recherche réussie.
-7. Dans **Préférences**, changez le thème, activez le mode debug ou réglez la durée de cache des résultats (1 à 168 heures).
-8. Ouvrez l’onglet **Journaux / Debug** pour consulter les diagnostics ou ouvrir le fichier de log. Le fichier peut aussi être ouvert directement depuis cet onglet.
-
-Les réglages sont enregistrés dans `%LOCALAPPDATA%\GTA5ScriptUpdater\settings.json`. Le cache est dans `%LOCALAPPDATA%\GTA5ScriptUpdater\update_cache.json` et les journaux dans `%LOCALAPPDATA%\GTA5ScriptUpdater\logs\updater.log` (avec un emplacement de repli dans le dossier utilisateur sur les autres plateformes).
-
-
---------------------------------
-**Points techniques importants**
---------------------------------
-- Cette version est capable de rechercher sur lspdfr (si vous trouvez l'api).
-
-- Peut freezer légèrement pendant la recherche de mise a jours.
-
-- Matching normalisé (extensions, versions et suffixes courants retirés), alias manuels pour des mods connus; score inférieur à 75 % présenté comme correspondance possible plutôt qu’une mise à jour confirmée.
-
-- Scripts introuvables par les mises a jour sont la cause d'un nom de fichier différent du script ou mal formatée.
-
-- ini introuvable est la conséquence d'un nom différent de celui du script.
