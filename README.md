@@ -27,7 +27,7 @@ A Windows desktop app for managing GTA V scripts and plugins.
 - Implement a feature for the software to scan `.log` files and highlight them based on their content:
    Red: logs containing terms such as "error", "Fatal error", "Crash", etc.
    Orange: logs containing terms such as "Warning", "Deprecated", "Out of memory", etc.
-   Green: logs that contain no errors. Pay attention to the color hierarchy: red takes precedence over orange.
+   Green: logs that contain no errors. 
   in 2 steps / functions:
    1. scan the log files (one button or when application scan through your list of scripts)
    2. scan the content of the log files (button)
