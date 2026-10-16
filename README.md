@@ -68,7 +68,7 @@ A Windows desktop app for managing GTA V scripts and plugins.
 </div>
 
 
-GTA5 Script Updater is a PySide6 desktop application designed to inventory GTA V scripts and plugins, manage their local status, and manually auto-check for updates.
+GTA5 Script Updater is a PySide6 desktop application designed to inventory GTA V scripts and plugins, manage their local status, and auto-check for updates.
 
 <div style="font-family: 'Georgia', serif; border-left: 4px solid #0076ff; padding-left: 15px; margin-bottom: 25px;">
   <h2 style="font-size: 22px; color: #1a1a1a; margin: 0; font-weight: normal; font-style: italic;">
