@@ -117,6 +117,7 @@ This is especially important for [URLs]; it prevents the application from having
 (Doing so risks getting you blocked by the website due to request-per-minute limits.)
 Furthermore, the application might not always find the correct URL (it could even select the wrong one, particularly when multiple scripts share the same name).
 Providing complete information for each entry is highly recommended for optimal performance and ease of use.
+<a href="https://github.com/PEPER29/GTA5_Script_Updater/blob/main/Manual%20modification%20entry%20details">More details for Manual entry</a>
 
 #- The application searches via:
 - https://www.gta5-mods.com/
