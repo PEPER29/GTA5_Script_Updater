@@ -17,7 +17,9 @@ A Windows desktop app for managing GTA V scripts and plugins.
   <h2 style="font-size: 18px; color: #18181b; margin: 0 0 15px 0; font-weight: 700; text-align: center; border-bottom: 1px solid #e4e4e7; padding-bottom: 10px;">
     📜 Update history
   </h2>
-
+  
+  (Please be patient; version 1.2.0 will arrive soon, upon release !)
+  
 ```powershell
 
 #Changelog: v.1.2.0 (Fonction scripts log and profile Update) *+optimisations
