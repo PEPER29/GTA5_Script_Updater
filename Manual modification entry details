@@ -1,18 +1,32 @@
-Modification entry Tips : (how to)
+-------------------------------------------------------------------------
+                  Modification entry Tips : (how to)
+Always check when you instal new script (auto check is not very accurate)
+-------------------------------------------------------------------------
 
-# ini path 
+# Display name 
+Name your script whatever you like; this does not rename the files (it only affects how they are displayed in the app)
+
+# Local Version 
+Overwrites the version found by the application
+(Make sure you select the correct version you have)
+
+# Associated ini path / Name
 name_of_your_ini.ini
 or
-Folder\name_of_your_ini.ini
+Script'name Folder\name_of_your_ini'script.ini
 
-# version
-always check local version when you instal new script (auto check is not very accurate)
-
-# url 
+# Mod page URL
 -github :https://github.com/user/script/releases
 -gta5-mods.com : simply script URL 
 -LSPDFR :simply script url (you need api-key in the preferences) Update v.1.1.5
--Nexus mod : script url or ID (you need api-key in the preferences) Update v.1.1.5
 
-# activate key (for you know where each script use key) Update v.1.1.5
-d'ont forget to separate each key with "|" (Alt Gr + 6)
+
+# Personal notes
+Everything you want to write :) 
+
+# Activation Hotkey (for you know where each script use key) Update v.1.1.5
+You can add all the hotkeys you use to this script
+D'ont forget to separate each key with "|" (Alt Gr + 6)
+
+# Nexus GTA V mod Url or Id
+script url mains page or ID (you need api-key in the preferences) Update v.1.1.5
