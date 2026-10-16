@@ -5,9 +5,7 @@
 
 A Windows desktop app for managing GTA V scripts and plugins.
 
-<img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/a632ce4c-b8f3-4828-9ec8-f7c90ff545d0" /><img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/17416d02-42d3-44c0-88eb-f77fc7c2123e" /><img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/0b2b29d5-6a32-4edc-a99f-689b17449941" />
-
-
+<img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/f14ae096-0718-467c-abb1-da230afc76db" /><img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/17416d02-42d3-44c0-88eb-f77fc7c2123e" /><img width="317" height="245" alt="image" src="https://github.com/user-attachments/assets/0b2b29d5-6a32-4edc-a99f-689b17449941" />
 
 <a href="https://github.com/PEPER29/GTA5_Script_Updater/blob/main/PLAN%20%3A%20future%20Update">For more details (future-Update)</a>
 
