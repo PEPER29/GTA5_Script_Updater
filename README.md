@@ -162,3 +162,6 @@ Line format: [original script filename] [display name] [local version] [script U
 - Scripts not found during update checks are usually caused by a filename that differs from the actual mod name or is poorly formatted.
 - Missing INI files are the result of a different name than the script.
 
+  <img width="500" height="120" alt="logo" src="https://github.com/user-attachments/assets/8f3c67c5-6131-426f-a132-2c1ea6ff2811" />
+16/10/2026
+
