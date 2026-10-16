@@ -27,7 +27,7 @@ It must execute an HTTP request formatted as follows:
 
 - add a logo (gta5_script_updater\logo.png) to the interface (replacing "GTA Script updater" Title ) and the current version number, e.g., V:1.2.0
 
-#-V.1.2.0 (ongoing)
+#-V.1.2.0 ( Done ! )
 ------------------------------------------------------------------------
 
 - Add a "Script Logs" tab
