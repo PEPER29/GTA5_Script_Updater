@@ -59,6 +59,12 @@ To be added in version 1.2++ or later (ideas to be fleshed out: research/impleme
 Ideally, a quick and easy way to edit the XML: a window displaying the file where only the values ​​can be modified.
 
 - A search function for scripts from sites like LSPDFR, GTA5-mods.com, or Nexus Mods via a search bar (displaying the links found, which lead to the script's respective presentation page).
+
+- better script-log finder (search for subfolders within the "scripts" and "plugin" folders)
+
+- Script conflict checker ? (examines .ini and .log files to infer which scripts might be in conflict ? )
+Feature under development (exploring available methods to make conflict detection more efficient)
+
 ----------------------------------------
 *PLAN WORK IN PROGRESS NOT FINISHED YET*
 ----------------------------------------
